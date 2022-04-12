@@ -7,16 +7,19 @@ pip install inuits-module-loader
 
 ## usage
 ```python
-from inuits-module-loader import import_string
+from inuits_module_loader import import_string
 import_string("dotted.path.to.your.module.or.class")
 ```
 
 ## example
 This example will dynamically load classes in the extensions/resources folder that extend the default classes in the application.
 Default class: resources.your_file_name.YourClassName
+
 Class in extensions folder: extensions.resources.your_file_name.YourClassName
+
 It is recommended to name the extension file and class the same as the default class, and import the default class with an alias in your extension class.
 
+### Extended class
 ```python
 from resources.your_file_name.YourClassName import YourClassName as DefaultYourClassName
 
@@ -26,9 +29,9 @@ class YourClassName(DefaultYourClassName):
         return True
 ```
 
-The app:
+### App
 ```python
-from inuits-module-loader import import_string
+from inuits_module_loader import import_string
 import logging
 
 logger = logging.getLogger(__name__)

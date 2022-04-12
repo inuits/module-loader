@@ -6,10 +6,10 @@ long_description = (this_directory / "readme.md").read_text()
 
 setup(
     name='inuits_module_loader',
-    version='1.0.1',
-    description="A library to load modules/classes based on their dotted string path.",
+    version='1.0.2',
+    description='A library to load modules/classes based on their dotted string path.',
     long_description=long_description,
-    long_description_content_type="text/markdown",
+    long_description_content_type='text/markdown',
     classifiers=[
         'License :: OSI Approved :: GNU General Public License v2 (GPLv2)',
         'Intended Audience :: Developers',
@@ -21,5 +21,6 @@ setup(
     packages=[
         'inuits_module_loader'
     ],
-    provides=['inuits_module_loader']
+    provides=['inuits_module_loader'],
+    url='https://github.com/inuits/module-loader'
 )

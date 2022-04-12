@@ -6,7 +6,7 @@ long_description = (this_directory / "readme.md").read_text()
 
 setup(
     name='inuits_module_loader',
-    version='1.0.2',
+    version='1.0.3',
     description='A library to load modules/classes based on their dotted string path.',
     long_description=long_description,
     long_description_content_type='text/markdown',

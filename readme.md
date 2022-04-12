@@ -1,17 +1,17 @@
-# readme
+# Readme
 This library is the same as the Django utils module loader, but without needing Django as dependency.
 It is used to load modules/classes based on their dotted string path.
 
-## install
+## Install
 pip install inuits-module-loader
 
-## usage
+## Usage
 ```python
 from inuits_module_loader import import_string
 import_string("dotted.path.to.your.module.or.class")
 ```
 
-## example
+## Example
 This example will dynamically load classes in the extensions/resources folder that extend the default classes in the application.
 Default class: resources.your_file_name.YourClassName
 
